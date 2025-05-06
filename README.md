@@ -1,4 +1,4 @@
-# 🛒 Product Store
+# 🛒E-commerce-Product-Management-Dashboard
 
 This is a **full-stack web application** built with the following technologies:
 
