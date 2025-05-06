@@ -22,7 +22,7 @@ This is a **full-stack web application** built with the following technologies:
 ## 🚀 Installation
 
 ```bash
-git clone "https://github.com/Destroyer795/Product-List.git"
+git clone "https://github.com/Destroyer795/E-commerce-Product-Management-Dashboard.git"
 cd Product-List
 npm install
 npm run build
