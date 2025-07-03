@@ -23,7 +23,7 @@ This is a **full-stack web application** built with the following technologies:
 
 ```bash
 git clone "https://github.com/Destroyer795/Personal-Inventory-Manager.git"
-cd Personal Inventory Manager
+cd Personal-Inventory-Manager
 npm install
 npm run build
 npm run start
