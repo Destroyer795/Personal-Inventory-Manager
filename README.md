@@ -1,4 +1,4 @@
-# 🛒E-commerce-Product-Management-Dashboard
+# 🛒Personal Inventory Manager
 
 This is a **full-stack web application** built with the following technologies:
 
@@ -22,8 +22,8 @@ This is a **full-stack web application** built with the following technologies:
 ## 🚀 Installation
 
 ```bash
-git clone "https://github.com/Destroyer795/E-commerce-Product-Management-Dashboard.git"
-cd E-commerce-Product-Management-Dashboard
+git clone "https://github.com/Destroyer795/Personal Inventory Manager.git"
+cd Personal Inventory Manager
 npm install
 npm run build
 npm run start
