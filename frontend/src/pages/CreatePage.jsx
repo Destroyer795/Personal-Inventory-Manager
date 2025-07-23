@@ -7,35 +7,34 @@ const CreatePage = () => {
     name: "",
     price: "",
     image: "",
-  }); //it is an object with name price and image
+  });
 
   const toast = useToast();
-  const { createProduct } = useProductStore(); //extracting the function
+  const { createProduct } = useProductStore();
   const handleAddProduct = async () => {
     const {success, message} = await createProduct(newProduct);
     if (!success) {
       toast({
-        title: "Error!!", //the "title" thing does not matter it seems
+        title: "Error!!",
         description: message,
         status: "error",
-        duration: 3000, //3 secs duration
-        isClosable: true //close the toast choice
+        duration: 3000,
+        isClosable: true
       })
     }
     else {
       toast({
-        title: "Suzzess!!", //the "title" thing does not matter it seems
+        title: "Success!!",
         description: message,
         status: "success",
-        duration: 3000, //3 secs duration
-        isClosable: true //close the toast choice
+        duration: 3000,
+        isClosable: true 
       })
     }
-    setNewProduct({ name: "", price: "", image: "" }); //to reset the input thing after creation
+    setNewProduct({ name: "", price: "", image: "" });
   };
 
   return (
-    //this container.sm also came from the documentation..
     <Container maxW={"container.sm"}> 
       <VStack
         spacing={8}
@@ -49,7 +48,7 @@ const CreatePage = () => {
             bgGradient={"linear(to-r, cyan.400, blue.500)"}
             bgClip={"text"}
           >
-            Create Product Bro
+            Create Product
           </Text>
         </Heading>
 
@@ -82,7 +81,7 @@ const CreatePage = () => {
             />
 
             <Button colorScheme='blue' onClick={handleAddProduct} w={'full'}>
-              Add Product bro
+              Add Product
             </Button>
           </VStack>
         </Box>

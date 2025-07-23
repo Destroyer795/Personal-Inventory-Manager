@@ -1,6 +1,5 @@
 import { create } from "zustand"
 
-//using a hook
 //covering the object with parenthesis means that we are returning an object
 export const useProductStore = create((set) => ({
     products: [],
@@ -20,7 +19,7 @@ export const useProductStore = create((set) => ({
         set((state) => ({ products: [...state.products, data.data ]}))
         //the above thing is getting the previous state and then return an object
         //where we skip all the previous products that we had and then also add the new product that we got from the backend
-        return {success: true, message: "The new thing successfully addded go check.."}
+        return {success: true, message: "The new item successfully added go back home..."}
     },
     fetchProducts: async () => {
         const res = await fetch("/api/products");

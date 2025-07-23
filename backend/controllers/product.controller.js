@@ -35,7 +35,7 @@ export const createProduct = async (req, res) => { //making the function async t
 };
 
 export const updateProduct = async (req, res) => { //destructure the id again..
-    const {id} = req.params; //destructuring the id broo
+    const {id} = req.params; //destructuring the id
     console.log("id", id);
     const product = req.body; //this is going to be the fields such as name, image and price whatever the user wants to update.
     //the user might want to update all of them or some of them..
