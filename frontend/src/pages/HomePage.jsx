@@ -1,4 +1,4 @@
-import { Container, VStack, Text, SimpleGrid } from '@chakra-ui/react'
+import { Container, VStack, Text, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'; 
 import { useProductStore } from '../store/product.js';
@@ -20,8 +20,7 @@ const HomePage = () => {
             fontWeight={"bold"}
             textTransform={"uppercase"}
             textAlign={"center"}
-            bgGradient={"linear(to-r, cyan.400, blue.500)"}
-            bgClip={"text"}
+            color={useColorModeValue("gray.800", "white")}
           >
             Current Products 🛒
           </Text>

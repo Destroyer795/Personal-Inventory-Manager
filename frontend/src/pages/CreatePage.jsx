@@ -45,8 +45,7 @@ const CreatePage = () => {
             fontWeight={"bold"}
             textTransform={"uppercase"}
             textAlign={"center"}
-            bgGradient={"linear(to-r, cyan.400, blue.500)"}
-            bgClip={"text"}
+            color={useColorModeValue("gray.800", "white")}
           >
             Create Product
           </Text>
@@ -57,7 +56,9 @@ const CreatePage = () => {
           bg={useColorModeValue("white", "gray.800")}
           p={6}
           rounded={"lg"}
-          shadow={"md"}
+          shadow={"sm"}
+          borderWidth={1}
+          borderColor={useColorModeValue("gray.200", "gray.700")}
         >
           <VStack spacing={4}>
             <Input

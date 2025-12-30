@@ -56,12 +56,14 @@ function ProductCard({product}) {
 
   return (
     <Box
-        shadow={"lg"}
+        shadow={"sm"}
         rounded={"lg"}
         overflow={"hidden"}
         transition={"all 0.3s"}
-        _hover={ {transform: "translateY(-5px)", shadow: "xl" }}
+        _hover={ {transform: "translateY(-2px)", shadow: "md" }}
         bg={bg}
+        borderWidth={1}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
     >
         <Image src={product.image} alt={product.name} h={48} w="full" objectFit="cover"/>
         <Box p={4}>
@@ -73,8 +75,8 @@ function ProductCard({product}) {
             </Text>
 
             <HStack spacing={2}>
-                <IconButton icon={<EditIcon />} onClick={onOpen} colorScheme='blue'/>
-                <IconButton icon={<DeleteIcon />} onClick={() => handleDeleteProduct(product._id)} colorScheme='red'/>
+                <IconButton icon={<EditIcon />} onClick={onOpen} colorScheme='blue' variant='ghost'/>
+                <IconButton icon={<DeleteIcon />} onClick={() => handleDeleteProduct(product._id)} colorScheme='red' variant='ghost'/>
             </HStack>
         </Box>
 
